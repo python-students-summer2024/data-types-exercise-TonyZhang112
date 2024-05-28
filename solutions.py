@@ -11,7 +11,7 @@ def calculate_profit():
     You can assume the user will enter only numeric characters, e.g. "3000", not "$3,000.00"
     The output should match the format of the following examples: "Profit: $690.00" for sales of $3,000, or "Profit: $2,300.00" for sales of $10,000, etc.
     """
-    total_sales = float(input('what is your amount of total sales?'))
+    total_sales = float(input('what is your amount of total sales? '))
     annual_profit = total_sales * 0.23
     x = format(annual_profit, ',.2f')
     print('Profit: $' + x+'\n')
@@ -26,8 +26,8 @@ def calculate_quotient_and_remainder():
       Enter number #2: 2
       2 goes into 5 a total of 2 times with a remainder of 1
     """
-    number1 = int(input("What is your first number?"))
-    number2 = int(input('What is your second number?'))
+    number1 = int(input("What is your first number? "))
+    number2 = int(input('What is your second number? '))
     quotient = number1 // number2
     remainder = number1 % number2
     print(str(number2) + ' goes into ' + str(number1) + " a total of "+ str(quotient)+ ' times with a remainder of '+ str(remainder)+'\n')
@@ -45,8 +45,8 @@ def calculate_miles_per_gallon():
       Miles per gallon: 2.2
     """
     print('This is a Miles Per Gallon (MPG) calculator.')
-    miles_driven= int(input("How many miles have you driven?"))
-    gas_used= int(input('How many gallons of gas you used?'))
+    miles_driven= int(input("How many miles have you driven? "))
+    gas_used= int(input('How many gallons of gas you used? '))
     mpg=int(miles_driven) / int(gas_used)
     #print('Miles driven: '+ str(miles_driven) +'\nGas used (gallon): '+ str(gas_used) + '\nMiles per gallon: '+ str(mpg)+'\n')
     x = format(miles_driven, '>25,.2f')
@@ -62,7 +62,7 @@ def calculate_miles_per_gallon():
     
     print(c1)
     print(c2)
-    print(c3)
+    print(c3+'\n')
 
 
 def align_text():
@@ -81,9 +81,9 @@ def align_text():
       Price #2: $   10.00
       Price #3: $ 9532.60
     """
-    p1 = float(input("Please input 1st price value"))
-    p2 = float(input("Please input 2nd price value"))
-    p3 = float(input("Please input 3rd price value"))
+    p1 = float(input("Please input 1st price value "))
+    p2 = float(input("Please input 2nd price value "))
+    p3 = float(input("Please input 3rd price value "))
     x = format(p1, '>20,.2f')
     y = format(p2, '>20,.2f')
     z = format(p3, '>20,.2f')
